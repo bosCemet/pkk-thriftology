@@ -15,7 +15,7 @@ class Index extends Component
 
      public function mount()
     {
-        $this->products = Product::all(); // Contoh mengambil semua produk
+        $this->products = Product::all();
     }
 
 

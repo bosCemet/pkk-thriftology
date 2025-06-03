@@ -103,6 +103,15 @@
                 <button type="submit" class="btn btn-primary">Login</button>
             </div>
         </form>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div class="signup-link mt-3">
             New User? <a href="#">Sign Up</a>
         </div>
